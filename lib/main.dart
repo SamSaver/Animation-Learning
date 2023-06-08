@@ -4,6 +4,8 @@ import 'package:animation_learning/animated_widget/animation_with_animated_widge
 import 'package:animation_learning/animated_builder/animation_with_animated_builder.dart';
 import 'package:animation_learning/animation_with_status_listeners/animation_with_status_listener.dart';
 import 'package:animation_learning/simultaneous_animation/simultaneous_animation.dart';
+import 'package:animation_learning/implicit_animations/fadein_text.dart';
+import 'package:animation_learning/implicit_animations/random_container_animation.dart';
 
 //NOTE: You can Put any of the following widgets in the home property of MaterialApp to see the animation
 
@@ -28,7 +30,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.green,
       ),
-      home: const SimultaneousAnimation(),
+      home: const RandomContainerAnimation(),
     );
   }
 }
