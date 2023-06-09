@@ -11,11 +11,21 @@ import 'package:animation_learning/hero_animations/radial/RadialAnimation.dart';
 
 //NOTE: You can Put any of the following widgets in the home property of MaterialApp to see the animation
 
+// THESE ANIMATIONS ARE SAME BUT IMPLEMENTATION IS DIFFERENT [GROW ANIMATION]
 // InitialAnimation()
 // AnimationWithAnimatedWidget()
 // AnimationWithAnimatedBuilder()
-// AnimationWithStatusListeners()
 // SimultaneousAnimation()
+
+// [EASE IN ANIMATION]
+// AnimationWithStatusListeners()
+
+// [IMPLICIT ANIMATIONS]
+// FadeInImplicitAnimation()
+
+// [HERO ANIMATIONS]
+// RadialAnimation()
+// HeroAnimation()
 
 void main() {
   runApp(const MyApp());
@@ -32,7 +42,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const RadialAnimation(),
+      home: const HeroAnimation(),
     );
   }
 }
